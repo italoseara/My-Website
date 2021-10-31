@@ -1,0 +1,133 @@
+
+.folder {
+    position: absolute;
+
+    width: 45vw;
+    height: 50vh;
+
+    top: 20vh;
+    left: 20vw;
+
+    background: #202020;
+}
+
+.folder > header {
+    width: 100%;
+    height: 7%;
+
+    background: #1a1a1a;
+}
+
+.folder > .body {
+    display: flex;
+
+    height: 86%;
+}
+
+.folder > header > div {
+    float: right;
+
+    margin: .5%;
+    margin-top: 1%;
+
+    height: 1.5vh;
+    width: 1.5vh;
+
+    border-radius: 50%;
+}
+
+.folder > header > div:first-child {
+    margin-right: 1%;
+}
+
+.folder > .body > .lateral {
+    width: 30%;
+
+    background: #181818;
+}
+
+.folder > .body > .lateral > ul {
+    padding-top: 1vh;
+
+    list-style-type: none;
+}
+
+.folder > .body > .lateral > ul > li {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vh;
+    color: white;
+
+    padding: 0.7vh 1vh 0.7vh 2vh;
+
+    text-shadow: 0 0 4px #000;
+    align-items: center;
+}
+
+.folder > .body > .lateral > ul > li:hover {
+    background-color: #202020;
+}
+
+.folder > .body > .lateral > ul > li > img {
+    transform: translateY(-15%);
+    margin: 5px 5px 0 0;
+}
+
+.folder > .body > .content {
+    display: flex;
+
+    width: 70%;
+    height: 93%;
+}
+
+.folder > .explorer {
+    display: flex;
+    align-items: center;
+    
+    padding-left: .5vh;
+    height: 7%;
+
+    background: #171717;
+
+    font-size: 1.4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 4px #000;
+    color: #fff;
+}
+
+.folder > .explorer i {
+    padding: 0 .75vh 0 .75vh;
+    color: #8C8C8C;
+}
+
+.folder > .explorer > .path {
+    display: flex;
+
+    width: 48vh;
+
+    align-items: center;
+
+    padding: 0 .5vh 0 .5vh;
+    border: 1px solid #535353;
+    margin-left: .5vh;
+}
+
+.folder > .explorer img {
+    height: 2.3vh;
+
+    margin-right: .7vh;
+}
+
+.folder > .explorer > .search-bar {
+    display: flex;
+    align-items: center;
+
+    height: 2.3vh;
+    width: 18.5vh;
+    
+    padding: 0 1.5vh 0 .5vh;
+    margin-left: 1vh;
+
+    border: 1px solid #535353;
+    color: #8C8C8C;
+}

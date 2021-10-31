@@ -1,0 +1,39 @@
+#apps {
+    position: absolute;
+}
+
+.app {
+    margin: 1vh;
+    padding: .5vh;
+
+    width: 10vh;
+    height: max-content;
+
+    text-align: center;
+    user-select: none;
+}
+
+.app > img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+}
+
+.app > label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vh;
+    color: white;
+    text-shadow: 0 0 4px #000; 
+}
+
+.app > img, .app > label { 
+    display: block;
+}
+
+.app:hover {
+    background: #6b6b6b41;
+}
+
+.app:active {
+    background: #39326841;
+}
