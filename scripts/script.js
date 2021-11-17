@@ -2,7 +2,9 @@
 
 let projects = new Folder("My Projects", [
     new Folder("Python", [
-        new App("Whatsappy", "whatsapp", () => {})
+        new App("Whatsappy", "whatsapp", () => {
+            window.location.href = "http://github.com/italoseara/whatsappy";
+        })
     ]),
 ]);
 let socialMedia = new Folder("My Social Media", [
@@ -13,8 +15,12 @@ let socialMedia = new Folder("My Social Media", [
         window.location.href = "http://github.com/italoseara";
     })
 ]);
-let contactme = new App("Contact Me", "contacts", () => {});
-let aboutme = new App("About Me", "info--v1", () => {});
+let contactme = new App("Contact Me", "contacts", () => {
+    openApp("contactme");
+});
+let aboutme = new App("About Me", "info--v1", () => {
+    openApp("aboutme");
+});
 let readme = new App("README.txt", "document--v1", () => {});
 
 projects.desktop()

@@ -11,55 +11,54 @@ class Folder {
     }
 
     openFolder() {
-
         let html_str = `
             <div class="folder">
-            <header>
-                <div id="close" style="background: red;"></div>
-                <div id="maximize" style="background: yellow;"></div>
-                <div id="minimize" style="background: green;"></div>
-            </header>
+                <header>
+                    <div id="close" style="background: red;"></div>
+                    <div id="maximize" style="background: yellow;"></div>
+                    <div id="minimize" style="background: green;"></div>
+                </header>
 
-            <div class="explorer">
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-right"></i>
-                <i class="fas fa-chevron-down"></i>
-                <i class="fas fa-arrow-up"></i>
+                <div class="explorer">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-arrow-up"></i>
 
-                <div class="path">
-                    <img src="https://img.icons8.com/color/48/000000/folder-invoices--v1.png">
-                    <div class="text">
-                        This PC
-                        <i class="fas fa-chevron-right"></i>
-                        Desktop
-                        <i class="fas fa-chevron-right"></i>
-                        ${this.name}
+                    <div class="path">
+                        <img src="https://img.icons8.com/color/48/000000/folder-invoices--v1.png">
+                        <div class="text">
+                            This PC
+                            <i class="fas fa-chevron-right"></i>
+                            Desktop
+                            <i class="fas fa-chevron-right"></i>
+                            ${this.name}
+                        </div>
+                    </div>
+
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        Search ${this.name}
                     </div>
                 </div>
 
-                <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    Search ${this.name}
+                <div class="body">
+                    <div class="lateral">
+                        <ul>
+                            <li>
+                                <img style="width: 1.6em;" src="https://img.icons8.com/color/48/000000/folder-invoices--v1.png"/>
+                                <label>This PC</label>
+                            </li>
+
+                            <li>
+                                <img style="width: 1.6em;" src="https://img.icons8.com/color/48/000000/folder-invoices--v1.png"/>
+                                <label>Network</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content"></div>
                 </div>
-            </div>
-
-            <div class="body">
-                <div class="lateral">
-                    <ul>
-                        <li>
-                            <img style="width: 1.6em;" src="https://img.icons8.com/color/48/000000/folder-invoices--v1.png"/>
-                            <label>This PC</label>
-                        </li>
-
-                        <li>
-                            <img style="width: 1.6em;" src="https://img.icons8.com/color/48/000000/folder-invoices--v1.png"/>
-                            <label>Network</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="content"></div>
-            </div>
             </div>
         `
 
@@ -100,6 +99,7 @@ class Folder {
         desktop.appendChild(this.app);
     }
 }
+
 
 class App {
     constructor(name, icon, func) {

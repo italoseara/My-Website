@@ -9,6 +9,7 @@
     left: 20vw;
 
     background: #202020;
+    overflow: hidden;
 }
 
 .folder > header {
@@ -21,7 +22,7 @@
 .folder > .body {
     display: flex;
 
-    height: 86%;
+    height: 100%;
 }
 
 .folder > header > div {
